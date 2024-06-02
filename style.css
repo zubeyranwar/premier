@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "Montreal";
+  src: url(/NeueMontreal-Regular.otf);
+}
+@font-face {
+  font-family: "monument";
+  src: url(/MonumentExtended-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montreal";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  padding-top: 0.1px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 24px;
+  /* padding: 0px 40px; */
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.nav h1 {
+  width: 23%;
+  height: 100%;
+  /* background-color: yellow; */
+  font-size: 2.5vw;
+  font-family: "monument";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav h2 {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  /* background-color: red; */
+  border-right: 2px solid #222;
+}
+
+.nav h2:nth-last-child(2) {
+  width: 23%;
+}
+
+.nav h2:nth-last-child(1) {
+  width: 10%;
+  border: none;
+}
+
+.nav i {
+  font-size: 1.3vw;
+}
+
+.center {
+  width: 100%;
+  height: calc(100% - 11vh - 18px);
+  /* background-color: red; */
+  padding: 4.5vw;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  position: relative;
+}
+
+.content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 50%;
+  /* background-color: rgba(0, 0, 0, 0.23); */
+  /* backdrop-filter: blur(10px); */
+  position: absolute;
+  bottom: 0;
+  padding: 2.5vw;
+  color: white;
+}
+
+.over1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 36px;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.over1 h2 {
+  font-size: 2vw;
+  font-family: "monument";
+}
+
+.over1 h4 {
+  width: 50px;
+  height: 50px;
+  /* background-color: yellow; */
+  border: 2px solid #2222224a;
+  /* mix-blend-mode: difference; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0.8vw;
+  letter-spacing: 1.4px;
+}
+
+.over2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.over2 h3 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.over2 img {
+  height: 10%;
+}
+
+.scroll {
+  width: 100%;
+  height: 40vh;
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* padding: 2vw 4.5vw; */
+}
+
+.container {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  /* background-color: blue; */
+  padding: 2vw;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.scroll img {
+  width: 15%;
+  height: 100%;
+  margin: 1vw;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.alphabets {
+  height: 10vh;
+  width: 100%;
+  margin-top: 4.5vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-top: 3px solid #222222ad;
+  border-bottom: 3px solid #222222ad;
+  font-style: italic;
+}
+
+.alphabets h5 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  margin-right: 2vw;
+  font-weight: 400;
+  letter-spacing: 8px;
+  border-bottom: 2.5px solid #222;
+}
+
+.alphabets h6 {
+  font-size: 1vw;
+  /* background-color: yellow; */
+  color: #22222291;
+  padding: 0.5vw 0.8vw;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.alphabets h6:hover {
+  border: 1px solid #222;
+}
+
+.section__2 {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding: 4.5vw;
+}
+
+.part-1 {
+  width: 50%;
+  height: 100%;
+  background: url(/image7.jpg);
+  background-size: cover;
+  background-position: 0% 40%;
+}
+
+.part-2 {
+  width: 50%;
+  height: 100%;
+  align-self: flex-start;
+  object-fit: cover;
+}
+
+.part-2 img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: 0% 10%;
+}
+
+.update-page {
+  width: 100%;
+  height: 1000px;
+  padding: 4.5vw;
+  /* background-color: red; */
+}
+
+.update-page h3 {
+  font-size: 2.5vw;
+  font-family: "monument";
+  font-weight: bold;
+  margin-bottom: 4.5vw;
+  text-align: center;
+}
+
+.update-page .item {
+  display: flex;
+  width: 100%;
+  /* background-color: yellow; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 2px solid #222;
+}
+
+.item:nth-child(2) {
+  border-top: 2px solid #222;
+}
+
+.item h5 {
+  font-size: 1vw;
+  width: 2%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  opacity: 0;
+  object-position: 0 20%;
+  border-radius: 50%;
+}
+
+.item:hover img {
+  opacity: 1;
+  transition: all;
+  transition-duration: 400ms;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 40%;
+  /* background-color: red; */
+}
+
+.item-detail h4 {
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.item-detail h6 {
+  text-transform: uppercase;
+}
+
+.marquee {
+  width: 100%;
+  /* background-color: red; */
+  padding: 1.6vw;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.marquee h2 {
+  display: inline-block;
+  font-size: 4.2vw;
+  font-family: "monument";
+  margin-right: 10px;
+  text-transform: uppercase;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  /* -webkit-text-stroke: 2px #222; */
+  /* color: transparent; */
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 40px));
+  }
+}
+
+.part-4 {
+  width: 100%;
+  /* background-color: red; */
+  height: 80vh;
+}
